@@ -1,0 +1,21 @@
+#d1, #d2, #d3, #nodiv {
+    border: 15px dotted black;
+    padding: 35px;
+    background-image: url(Isis.jpg);
+}
+
+#d1 {
+    background-clip: border-box
+}
+
+#d2 {
+    background-clip: padding-box
+}
+
+#d3 {
+    background-clip: content-box
+}
+
+#nodiv {
+    background-clip: padding-box;
+}

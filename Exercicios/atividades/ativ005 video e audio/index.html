@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Nando_tsk</title>
+</head>
+<body>
+
+    <div class="logo">
+        <a href="index.html">( K a z u k iㅤN i g h t s )</a>
+    </div>
+    <h1>Tamanho de imagens</h1>
+    <p>Nesse site, dependendo da tela q você está usando, A imagem muda.</p>
+    <picture>
+        <!--- max-width: 750px = SE A LARGURA FOR ATÉ 750px ELE VAI MOSTRAR A IMAGEM PEQUENA, SE NÃO ELE MOSTRA A IMAGEM MÉDIA-->
+        <source media="(max-width: 750px)" srcset="imagem-pequena.jpg" type="image/jpg">
+        <!--- max-width: 1050px = SE A LARGURA FOR ATÉ 1050px ELE VAI MOSTRA A IMAGEM MÉDIA, SE PASSAR ELE MOSTRA A ORIGINAL-->
+        <source media="(max-width: 1050px)" srcset="imagem-media.jpg" type="image/jpg">
+        <img src="Imagem-grande.jpg" alt="imagem-grande">
+    </picture>
+    <br>
+    <a href="pag2.html">Áudio</a><br>
+    <a href="pag3.html">Vídeo</a>
+</body>
+</html>

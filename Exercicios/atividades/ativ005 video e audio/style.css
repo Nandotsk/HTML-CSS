@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'kazuki';
+    src: url('Nightcore.ttf') format('truetype');
+}
+
+p, h2 {
+    color:white;
+    text-align: justify;
+}
+
+body {
+    background-color: #07090D;
+}
+.logo > a {
+    color: aliceblue;
+    font-family: 'kazuki', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.logo {
+    width: 170px;
+    margin: auto;
+    padding: 4px;
+    border-radius: 5px;
+}

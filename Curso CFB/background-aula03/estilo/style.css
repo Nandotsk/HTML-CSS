@@ -1,0 +1,7 @@
+body {
+    background-image: url(Isis1.jpg), url(Goosebumbs.jpeg);
+    background-repeat: no-repeat;
+    background-size: 500px, 1000px;
+    height: 200em;
+    background-attachment:fixed, scroll;
+}

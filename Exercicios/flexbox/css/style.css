@@ -1,0 +1,389 @@
+* {
+    margin: 0; 
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Opens Sans', sans-serif;
+}
+
+nav li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none; 
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+header img {
+    width: 300px;
+    padding: 30px;
+}
+
+header nav{
+    display: flex;
+}
+
+header li a {
+    color: #191c03;
+    font-size: 22px;
+    padding: 15px;
+}
+
+header li {
+    margin: 0px 15px;
+}
+
+header li:first-child {
+    margin-left: 0;
+}
+
+header li:last-child {
+    margin-right: 0px;
+}
+
+@media (max-width: 1000px) {
+    header {
+        padding: 0px 40px;
+    }
+}
+
+@media (max-width: 860px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* HERO */
+.Hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    color: #fff;
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+}
+
+.Hero h1{
+    font-size: 3.8em;
+}
+
+.Hero h2{
+    font-size: 2.5em;
+}
+
+.Hero a{
+    background-color: #fff;
+    color:#191c03;
+    padding: 20px 60px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.Hero a:hover {
+    background-color:rgba(221, 221, 221, 0.848);
+}
+
+@media (max-width: 1200px) {
+    .Hero h1{
+        font-size: 2.8em
+    }
+
+    .Hero h2{
+        font-size: 2em
+    }
+
+    .hero a{
+        padding: 18px 50px;
+    }
+}
+
+
+@media (max-width: 860px) {
+    .Hero h1{
+        font-size: 2.3em;
+        
+    }
+    
+    .Hero h2{
+        font-size: 1.8em
+    }
+}
+
+@media (max-width: 700px) {
+    .Hero h1{
+        font-size: 1.8em;
+    }
+
+    .Hero h2{
+        font-size: 1.3em;
+    }
+    .hero a{
+        padding: 10px 30px;
+    }
+}
+
+/* Conheça o Hotel! */
+
+.conheça-o-hotel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10em;
+}
+
+.conheça-o-hotel h2{
+    font-size: 2em;
+    margin-bottom: 35px;
+    color: #191c03;
+}
+
+.conheça-o-hotel p{
+    max-width: 800px;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 35px;
+    color: #191c03;
+}
+
+.conheça-o-hotel hr{
+    width: 200px; 
+    height: 2px;
+    background-color: #191c03;
+    border: none;
+    margin-bottom: 35px;
+}
+
+.grid {
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conheça-o-hotel li{
+    list-style: none;
+    height: 350px; 
+    padding: 25px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.conheça-o-hotel .small {
+    width: 40%;
+    
+}
+
+.conheça-o-hotel .large {
+    width: 60%;
+}
+
+@media (max-width: 700px) {
+    .conheça-o-hotel li.small {
+        width: 100%;
+    }
+
+    .conheça-o-hotel li.large {
+        width: 100%;
+    }
+
+}
+
+/* CARACTERÍSTICAS */ 
+
+.caracteristicas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px;
+    background-color: #191c03;
+    color:#fff
+}
+
+.caracteristicas h2{
+    font-size: 2em;
+    margin-bottom: 35px;
+}
+
+.caracteristicas > p{
+    max-width: 800px;
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 35px;
+}
+
+.caracteristicas hr{
+    width: 200px; 
+    height: 2px;
+    background-color: #fff;
+    border: none;
+    margin-bottom: 5em;
+}
+
+.caracteristicas .grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.caracteristicas .grid li {
+    padding: 0px 15px;
+    text-align: center;
+}
+
+.caracteristicas .grid i{
+    margin-bottom: 17.5px;
+    font-size: 50px;
+}
+
+.caracteristicas .grid h3{
+    font-size: 1.5rem;
+    margin-bottom: 35px;
+}
+
+.caracteristicas .grid h3, i{
+    color: #c6be3c;
+}
+
+@media (max-width: 1100px) {
+    .caracteristicas .grid{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+/* Newslatter */
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    color: #c6be3c;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.newsletter h2{
+    font-size: 2em;
+    color: #c6be3c;
+    margin-bottom: 35px;
+}
+
+.newsletter p{
+    font-size: 1em;
+    margin-bottom: 35px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.newsletter hr{
+    margin-bottom: 50px;
+    width: 200px;
+    height: 2px;
+    background-color:#c6be3c;
+    border: none;
+}
+
+.newsletter form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.newsletter .btn{
+    background-color:#c6be3c;
+    color: #fff;
+    border-style: none;
+    padding: 15px 50px;
+    margin-left: 15px;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+.newsletter .btn:active {
+    background-color: #b8b239;
+}
+
+.newsletter .txt {
+    flex:1;
+    border: 1px;
+    border-style:solid;
+    border-color: #c6be3c;
+    border-radius: 4px
+}
+
+.false-footer {
+    background-color: #191c03;
+    color:#c6be3c;
+}
+
+.false-footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.false-footer li{
+    margin-right: 15px;
+}
+
+.false-footer li:last-child {
+    margin-right: 0px;
+}
+
+.false-footer li{
+    font-size: 3.3em;
+}
+
+.false-footer p{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+footer {
+    text-align:center;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+.false-footer p{
+    font-size: 1.1em;
+}
