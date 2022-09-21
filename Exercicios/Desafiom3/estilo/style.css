@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 70px 0;
+}
+
+header > h1 {
+    font-family: 'Passion One', cursive;
+    font-size: 7vw;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+article {
+    font-family: 'Sriracha', cursive;
+    padding-bottom: 50px;
+    font-size: 53px;
+    padding-top: 70px;
+    padding-left: 30px;
+}
+
+p {
+    text-indent: 20px;
+    line-height: 1.8em;
+}
+
+#background1 {
+    margin-top: 130px;
+    background: transparent url(../imagens/flores-wallpapers-40.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+.fundo {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.688);
+}
+
+#background2 {
+    margin-top: 130px;
+    background: transparent url(../imagens/caneta.png) center center no-repeat fixed;
+    background-size: cover;
+
+}
+
+
+
+.fundo {
+    color: white;
+    max-width: 640px;
+    padding-top: 70px;
+    padding-left: 30px;
+    
+}
+
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-top-left-radius:  7px;
+    border-top-right-radius: 7px;
+    font-size: 1.1em;
+}
