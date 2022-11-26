@@ -40,18 +40,40 @@ section{
 
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal{
 
 }
 
 section.imagem{
     background-color: rgb(67, 67, 67);
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.519);
     color: white;
 }
 
 section.imagem > p {
     background-color:rgba(0, 0, 0, 0.466);
     display: inline-block;
-    padding: 5px
+    padding: 5px;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.448);
 
+}
+
+#flor {
+    background-image: url(../correção/pacote-d012/imagens/background001.jpg);
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#caneta {
+    background-image: url(../correção/pacote-d012/imagens/background002.jpg);
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
