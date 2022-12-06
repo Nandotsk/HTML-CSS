@@ -12,81 +12,85 @@
 
         table {
             width: 500px;
-            height: 500px;
             border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.5em;
+            background-color: darkgrey;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        thead, tfoot {
+            background-color: rgb(68, 63, 63);
+            color: white;
+        }
+
+        tfoot {
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
         }
 
         td {
             border: 1px solid black;
-            padding: 4px;
-            text-align: left;
-            vertical-align: bottom;
+            text-align: center;
+            padding: 3px;
+        }
+        th {
+            border: 1px solid black       }
+        td.num {
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray
         }
     </style>
 
 </head>
 <body>
     <table>
-        <tr>
-            <td>
-                A1
-            </td>
-            <td>
-                A2
-            </td>
-            <td>
-                A3
-            </td>
-            <td>
-                A4
-            </td>
-        </tr>
 
+        <caption>
+            População das Unidades Federativas
+        </caption>
+    <thead>
+        <th scope="col">Estado</th>
+        <th scope="col">População</th>
+    </thead>         
+    
+    <tbody>
         <tr>
-            <td>
-                B1
-            </td>
-            <td>
-                B2
-            </td>
-            <td>B3
-
-            </td>
-            <td>
-                B4
-            </td>
+            <td>a</td>
+            <td class="num">num</td>
         </tr>
-
         <tr>
-            <td>
-                C1
-            </td>
-            <td>
-                C2
-            </td>
-            <td>
-                C3
-            </td>
-            <td>
-                C4
-            </td>
+            <td>a</td>
+            <td class="num">num</td>
         </tr>
-
         <tr>
-            <td>
-                D1
-            </td>
-            <td>
-                D2
-            </td>
-            <td>
-                D3
-            </td>
-            <td>
-                D4
-            </td>
+            <td>a</td>
+            <td class="num">num</td>
         </tr>
-        
+        <tr>
+            <td>a</td>
+            <td class="num">num</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td class="num">num</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td class="num">num</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <th scope="row">Fim</th>
+        <td class="num">nums</td>
+    </tfoot>
     </table>
 </body>
 </html>
